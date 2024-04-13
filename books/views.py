@@ -1,4 +1,5 @@
 from rest_framework import generics
+from rest_framework.viewsets import ModelViewSet
 
 
 from .serializers import BooksSerializer
@@ -35,4 +36,6 @@ class BookCreateApiView(generics.CreateAPIView):
     queryset = Book.objects.all()
     serializer_class = BooksSerializer
 
-
+class BookViewset(ModelViewSet):
+    queryset = Book.objects.all()
+    serializer_class = BooksSerializer

@@ -30,4 +30,6 @@ class BooksSerializer(serializers.ModelSerializer):
                     'message': "Muallif va kitob sarlavhasi bir xil bo'lishi mumkin emas"
                 }
             )
+
+
         return data
